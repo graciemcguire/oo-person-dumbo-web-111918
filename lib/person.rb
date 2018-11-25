@@ -54,11 +54,13 @@ class Person
      "♪ another one bites the dust ♫"
   end
 
-  def call_friend(Person)
-    self.happiness +=3
-    Person.happiness +=3
-    "Hi #{Person}! It's #{self}. How are you?"
+  def call_friend(friend)
+    self.happiness += 3
+    friend.happiness += 3
+    "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
+  
+  
 
   def start_conversation(Person, topic)
     if topic == "politics"
