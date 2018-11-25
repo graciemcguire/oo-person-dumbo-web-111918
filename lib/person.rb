@@ -59,7 +59,7 @@ class Person
     friend.happiness += 3
     "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
-  
+end
   
 
 #   def start_conversation(Person, topic)
