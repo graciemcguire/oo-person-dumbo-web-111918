@@ -61,14 +61,14 @@ class Person
   end
   
 
-  def start_conversation(Person, topic)
+  def start_conversation(friend, topic)
     if topic == "politics"
-      self.happiness -1
-      Person.happiness
-      "blah blah partisan blah lobbyist"
+      self.happiness -= 1
+      friend.happiness -= 1
+        "blah blah partisan blah lobbyist"
     elsif topic == "weather"
-      self.happiness +1
-      Person.happiness +1
+      self.happiness += 1
+      friend.happiness += 1
       "blah blah sun blah rain"
     else
       "blah blah blah blah blah"
